@@ -1,0 +1,144 @@
+:root {
+  --color-foreground: hsl(0, 0%, 0%);
+  --color-background: hsl(0, 0%, 100%);
+  --color-primary: hsl(230, 100%, 50%);
+  --color-primary-light: hsl(230, 100%, 60%);
+  --color-primary-dark: hsl(230, 100%, 40%);
+  --color-gray-dark: hsl(0, 0%, 60%);
+  --color-gray-light: hsl(0, 0%, 90%);
+  --font-body: -apple-system, "Segoe UI", Helvetica Neue, Helvetica, Roboto,
+    Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  padding: 0 16px;
+}
+
+.header--contents--left {
+  margin-right: auto;
+}
+.header--contents--right {
+  display: flex;
+  justify-content: flex-end;
+}
+.header--contents__item {
+  margin: 16px;
+  font-size: 36px;
+}
+
+/* content  */
+.main--content {
+  padding: 24px;
+}
+/* Member */
+
+.member--wrap {
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.member--card {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 580px;
+  height: 600px;
+  cursor: pointer;
+  background-color: white;
+  padding: 36px;
+  overflow: hidden;
+}
+
+.member--card:hover {
+  box-shadow: 0 8px 16px 5px rgba(0, 0, 0, 0.6);
+}
+
+.member--card__img__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.member--card__img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member--card__nickname {
+  font-weight: bold;
+}
+.member--card__content__area {
+}
+.member--card__header {
+  font-size: 18px;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.member--card__header::before {
+  content: "【";
+}
+.member--card__header::after {
+  content: "】";
+}
+.member--card__content {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
