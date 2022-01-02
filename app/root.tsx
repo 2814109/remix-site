@@ -9,8 +9,8 @@ import {
 import type { MetaFunction } from "remix";
 import type { LinksFunction } from "remix";
 import styles from "~/styles/global.css";
-import Header from "./components/general/header";
-import Content from "./components/general/content";
+// import Header from "./components/general/header";
+// import Content from "./components/general/content";
 export const links: LinksFunction = () => {
   return [
     {
@@ -33,10 +33,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Header />
-        <Content>
-          <Outlet />
-        </Content>
+        {/* <Content> */}
+        <Outlet />
+        {/* </Content> */}
         <ScrollRestoration />
         <Scripts />
         {process.env.NODE_ENV === "development" && <LiveReload />}

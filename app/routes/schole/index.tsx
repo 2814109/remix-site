@@ -1,12 +1,14 @@
 import { VFC } from "react";
-
+import Header from "../../components/general/header";
+import { Outlet } from "remix";
 const Index: VFC = () => {
   return (
-    <>
-      <div
+    <div>
+      <h1>contents</h1>
+      {/* <div
         style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
-      ></div>
-    </>
+      ></div> */}
+    </div>
   );
 };
 
