@@ -73,6 +73,13 @@ a:hover {
 .header--contents__item {
   margin: 16px;
   font-size: 36px;
+  color: white;
+}
+.header--contents__item:hover {
+  margin: 16px;
+  font-size: 36px;
+  color: white;
+  text-decoration: none;
 }
 
 /* content  */

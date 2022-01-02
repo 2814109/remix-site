@@ -4,7 +4,7 @@ import { Outlet } from "remix";
 const Index: VFC = () => {
   return (
     <div>
-      <h1>contents</h1>
+      <h1>Schole Top</h1>
       {/* <div
         style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
       ></div> */}
