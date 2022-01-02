@@ -153,3 +153,50 @@ a:hover {
 .login--form--area__link {
   display: flex;
 }
+
+.login--form--area__link__title::after {
+  content: "：";
+}
+
+.login--form__wrap {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login--form {
+  border-radius: 20px;
+  padding: 36px 24px;
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login--form__section {
+  margin: 12px 0;
+}
+
+.login--form__field_label {
+  display: block;
+  font-weight: 700;
+}
+
+.login--form__input {
+  border-radius: 10px;
+  border: 2px solid #222;
+  font-size: 1.125em;
+  width: 26em;
+  line-height: 1.38889;
+  padding: 8px;
+}
+
+.login--form__wrap__primary_button {
+  display: flex;
+  justify-content: center;
+}
+.login--form__primary_button {
+  font-size: 1.2em;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #0074d9;
+  color: #fff;
+  padding: 10px 20px;
+}
