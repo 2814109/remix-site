@@ -33,9 +33,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        {/* <Content> */}
         <Outlet />
-        {/* </Content> */}
         <ScrollRestoration />
         <Scripts />
         {process.env.NODE_ENV === "development" && <LiveReload />}
