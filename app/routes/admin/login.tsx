@@ -1,16 +1,7 @@
-import { VFC } from "react";
-import LinkArea from "../../components/individual/admin/login/linkArea";
-import LoginForm from "../../components/individual/admin/login/loginForm";
-const Login: VFC = () => {
+export default function Login() {
   return (
-    <div className="login--form__wrap">
-      <div className="login--form">
-        <h1>Login</h1>
-        <LinkArea />
-        <LoginForm />
-      </div>
-    </div>
+    <form action="auth0" method="post">
+      <button>Login with Auth0</button>
+    </form>
   );
-};
-
-export default Login;
+}

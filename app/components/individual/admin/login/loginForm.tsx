@@ -1,9 +1,8 @@
 import { VFC } from "react";
 import { Form } from "remix";
-
 const LoginForm: VFC = () => {
   return (
-    <Form method="post">
+    <Form action="/admin/auth0" method="post">
       <div className="login--form__section">
         <label htmlFor="email">
           <span className="login--form__field_label">Email</span>
