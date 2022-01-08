@@ -1,5 +1,3 @@
-# PORT 3001 INTERNAL 8003
-
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
