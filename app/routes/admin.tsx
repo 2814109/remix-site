@@ -1,15 +1,14 @@
 import { VFC } from "react";
 import { Outlet } from "remix";
-import Header from "~/components/general/user/header";
-import Content from "../components/general/user/content";
+import Sidebar from "~/components/general/admin/sidebar";
 
 const ScholeIndex: VFC = () => {
   return (
-    <div>
-      <Header />
-      <Content>
+    <div className="admin--view">
+      <Sidebar />
+      <div className="admin--main--contents">
         <Outlet />
-      </Content>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import type { LoaderFunction } from "remix";
+import { Outlet } from "remix";
 import { authenticator, User } from "~/utils/auth.server";
 import { useLoaderData } from "remix";
-
+import Sidebar from "~/components/general/admin/sidebar";
 export const loader: LoaderFunction = async ({ request }) => {
   const user = await authenticator.isAuthenticated(request, {
     failureRedirect: "/admin/login",
@@ -12,17 +13,5 @@ export const loader: LoaderFunction = async ({ request }) => {
 export default function Index() {
   const data = useLoaderData<{ user: User }>();
 
-  return (
-    <div>
-      {data.user && (
-        <>
-          <form action="logout" method="post">
-            <button>Logout</button>
-          </form>
-          <h1>{data.user.email}</h1>
-        </>
-      )}
-      <h1>Welcome to Remix</h1>
-    </div>
-  );
+  return <h1>Login success</h1>;
 }
