@@ -9,19 +9,19 @@ const Sidebar: VFC = () => {
       </section>
       <div className="sidebar--linkArea">
         <section>
-          <Link to="/admin/categories">Categories</Link>
+          <Link to="/admin/dashboard/categories">Categories</Link>
         </section>
         <section>
-          <Link to="/admin/members">Members</Link>
+          <Link to="/admin/dashboard/members">Members</Link>
         </section>
         <section>
-          <Link to="/admin/articles">Articles</Link>
+          <Link to="/admin/dashboard/articles">Articles</Link>
         </section>
         <section>
-          <Link to="/admin/videos">Videos</Link>
+          <Link to="/admin/dashboard/videos">Videos</Link>
         </section>
         <section>
-          <Link to="/admin/books">Books</Link>
+          <Link to="/admin/dashboard/books">Books</Link>
         </section>
 
         <form action="logout" method="post">

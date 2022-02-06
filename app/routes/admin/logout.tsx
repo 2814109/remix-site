@@ -11,6 +11,7 @@ export let action: ActionFunction = async ({ request }) => {
   const logoutURL = new URL(AUTH0_LOGOUT_URL);
   logoutURL.searchParams.set("client_id", AUTH0_CLIENT_ID);
   logoutURL.searchParams.set("returnTo", AUTH0_RETURN_TO_URL);
+  console.log("#" + AUTH0_RETURN_TO_URL);
   return redirect(logoutURL.toString(), {
     headers: {
       "Set-Cookie": await destroySession(session),

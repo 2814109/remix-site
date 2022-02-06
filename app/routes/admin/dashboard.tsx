@@ -2,7 +2,7 @@ import { VFC } from "react";
 import { Outlet } from "remix";
 import Sidebar from "~/components/general/admin/sidebar";
 
-const ScholeIndex: VFC = () => {
+const Template: VFC = () => {
   return (
     <div className="admin--view">
       <Sidebar />
@@ -13,4 +13,4 @@ const ScholeIndex: VFC = () => {
   );
 };
 
-export default ScholeIndex;
+export default Template;
