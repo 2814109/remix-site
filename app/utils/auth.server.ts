@@ -40,7 +40,7 @@ const auth0Strategy = new Auth0Strategy(
   },
   async ({ profile }) => {
     // profileにAuth0のプロフィール情報が返ってきます
-    console.log(profile);
+    // console.log(profile);
     //
     // 返ってきた情報を利用してDBへ書き込むなどの処理
     // 加工するなどの処理を入れる
